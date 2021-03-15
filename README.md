@@ -1,4 +1,8 @@
-# Siamese Neural Network, Tensorflow implementation ![](sc.png) 
+# Siamese Neural Network ![](sc.png) 
+
+## Usage
+
+A siamese network is used to perform image similarity. It uses the same weights working in tandem on two inputs at the same time. In this specific implementation we have at the last layer a sigmoid activation function with just one neuron to compute the similarity/dissimilarity score.
 
 ## Instructions
 - Clone the repository.
@@ -27,3 +31,8 @@ where **imgcat_0_one.png** is the first image of the first couple regarding cate
 ## Requirements
 
 This network has been tested using Tensorflow 2.4 on Ubuntu 18.04 with CUDA 11.0 and cuDNN 8. The packages required are listed in the `requirements.txt`. Please refer at https://www.tensorflow.org/install/gpu to setup your machine properly.
+
+
+## Metrics estimation
+
+To track the goodness of our network we look at the binary accuracy, precision, recall, AUC, Recal at precision (80%, 90% and 95%). These can be monitored using the Tensorboard. 
