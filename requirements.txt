@@ -1,0 +1,11 @@
+tensorflow==2.4.0
+datetime
+os
+sklearn
+keras
+matplotlib
+math
+scipy
+python-opencv
+random
+itertools
